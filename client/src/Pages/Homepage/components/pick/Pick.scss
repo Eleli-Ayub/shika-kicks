@@ -1,0 +1,36 @@
+.pickWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90vw;
+    margin-top: -3%;
+    height: 100vh;
+
+    .topPick{
+        position: absolute;
+        display: flex;
+        height: 60%;
+        width: 80%;
+        border: solid red 1px;
+        border-radius: 50px;
+    }
+    ul{
+        position: absolute;
+        width: 70%;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li{
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+            list-style: none;
+            box-shadow: 0px 0px 10px grey;
+        }
+    }
+
+}

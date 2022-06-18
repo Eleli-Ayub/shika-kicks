@@ -60,7 +60,7 @@
     }
     .pageLinks{
         position: absolute;
-        margin-top: 23%;
+        margin-top: 11%;
         ul{
             display: flex;
 
@@ -87,4 +87,25 @@
             }
         }
     }
+    .shoeSorts{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 55%;
+        
+        h1{
+            text-align: center;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            max-width: 90vw;
+        }
+
+    }
+
 }

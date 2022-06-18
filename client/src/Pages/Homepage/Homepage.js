@@ -1,4 +1,6 @@
 import React from 'react'
+import Brand from './components/brand/Type'
+import Pick from './components/pick/Pick'
 import './Homepage.scss'
 import titlebg from './headerbg.jpg'
 import facebookIcon from './facebook.png'
@@ -27,6 +29,31 @@ function Homepage() {
                 <li>Kids</li>
                 <li>Unisex</li>
             </ul>
+        </div>
+        <div className="shoeSorts">
+            <h1>Explore By Brands</h1>
+            <ul>
+                <Brand/>
+                <Brand/>
+                <Brand/>
+                <Brand/>
+                <Brand/>
+                <Brand/>
+                <Brand/>
+                <Brand/>
+                <Brand/>
+                <Brand/>
+            </ul>
+            <h1>Shop For Family</h1>
+            <ul>
+                <Brand type="Women"/>
+                <Brand type="Men"/>
+                <Brand type="Unisex"/>
+                <Brand type="Kids"/>
+                <Brand type="Teens"/>
+            </ul>
+            <h1>Pick of the week</h1>
+            <Pick/>
         </div>
     </div>
   )
