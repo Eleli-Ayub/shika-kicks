@@ -1,6 +1,8 @@
 import React from 'react'
 import Brand from './components/brand/Type'
 import Pick from './components/pick/Pick'
+
+import Footer from '../../Footer/Footer'
 import './Homepage.scss'
 import titlebg from './headerbg.jpg'
 import facebookIcon from './facebook.png'
@@ -54,6 +56,8 @@ function Homepage() {
             </ul>
             <h1>Pick of the week</h1>
             <Pick/>
+
+        <Footer/>
         </div>
     </div>
   )
