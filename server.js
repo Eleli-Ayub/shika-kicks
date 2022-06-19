@@ -8,9 +8,11 @@ const Editproduct = require('./Routes/Editproduct')
 const Deleteproduct = require('./Routes/Deleteproduct')
 const Products = require('./Routes/Viewproducts')
 const app = express()
+const cors = require('cors')
 
 dotenv.config();
 app.use(express.json())
+app.use(cors())
 
 //connect to mongo db
 

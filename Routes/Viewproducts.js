@@ -3,11 +3,13 @@ const Product = require('../models/Product')
 
 router.get('/view-products', async (req, res)=>{
 
-    // const allProducts = await Product.find({})
-    // res.status(200).send(allProducts)
-
-    const allProducts = await Product.find({price: req.body.price})
-    res.status(200).send(allProducts)
+    Product.find({},(error, result)=>{
+        if(error){
+            res.send(error)
+        }else{
+            res.send(result)
+        }
+    })
        
 })
 module.exports = router
