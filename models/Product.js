@@ -25,6 +25,16 @@ const productSchema = mongoose.Schema({
         min: 1,
         max: 10
     },
+    gender:{
+        type: String,
+        required: true,
+        min: 3
+    },
+    brand:{
+        type: String,
+        required: true,
+        min: 3
+    },
     colors: {
         type: Array,
         min: 1,

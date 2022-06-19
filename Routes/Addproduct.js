@@ -18,6 +18,8 @@ router.post('/add-product', async(req, res)=>{
         description: data.description,
         price: data.price,
         sizes: data.sizes,
+        gender: data.gender,
+        brand: data.brand,
         colors: data.colors,
         quantity: data.quantities
     })

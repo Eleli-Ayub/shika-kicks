@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../../imagix"
+		},
+		{
+			"path": "../../smsapp"
 		}
 	],
 	"settings": {}

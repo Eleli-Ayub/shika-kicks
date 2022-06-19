@@ -6,6 +6,7 @@ const Loginuser = require('./Routes/Loginuser')
 const Addproduct = require('./Routes/Addproduct')
 const Editproduct = require('./Routes/Editproduct')
 const Deleteproduct = require('./Routes/Deleteproduct')
+const Products = require('./Routes/Viewproducts')
 const app = express()
 
 dotenv.config();
@@ -25,6 +26,7 @@ app.use('/api', Loginuser)
 app.use('/api/product', Addproduct)
 app.use('/api/product', Deleteproduct)
 app.use('/api/product', Editproduct)
+app.use('/api/client/products', Products)
 
 app.listen(process.env.PORT || 4000, (error)=>{
     if (error) {
